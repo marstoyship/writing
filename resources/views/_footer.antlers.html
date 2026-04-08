@@ -2,12 +2,12 @@
     <div>
         <div class="text-sm mb-4">&copy; {{ now format="Y" }} {{ settings:site_name }}</div>
         {{ nav:footer_navigation }}
-            <a href="{{ url }}" class="block text-sm text-gray-600 hover:text-teal mb-2">{{ title }}</a>
+            <a href="{{ url }}" class="items-center w-full lg:w-auto lg:flex text-sm font-semibold text-black hover:text-teal mb-2">{{ title }}</a>
         {{ /nav:footer_navigation }}
     </div>
     <div class="flex items-center">
         {{ settings:social }}
-            <a href="{{ url }}" class="ml-4" aria-label="{{ name }}" rel="noopener">
+            <a href="{{ url }}" class="ml-4 " aria-label="{{ name }}" rel="noopener">
                 {{ svg :src="icon" class="h-6 w-6 hover:text-teal" }}
             </a>
         {{ /settings:social }}

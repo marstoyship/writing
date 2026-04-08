@@ -1,12 +1,13 @@
 <div class="max-w-5xl mx-auto relative py-16">
     <article class="content">
-        <p class="font-medium text-lg text-teal">{{ subtitle }}</p>
-        <h1>{{ content }}</h1>
+        <h1 class="font-bold text-5xl text-black">{{ title }}</h1>
+        <p class="mb-20 text-lg text-black">{{ subtitle }}</p>
+        {{ content }}
     </article>
 </div>
 
 <div class="max-w-2xl mx-auto mb-32">
-    {{ collection:articles paginate="6" as="articles" }}
+    {{ collection:articles paginate="5" as="articles" }}
         {{ articles }}
             <div class="mb-16">
                 <h2 class="mb-4">
@@ -28,11 +29,11 @@
 
         {{ paginate }}
         {{ if prev_page || next_page }}
-        <div class="flex justify-between text-xl -mx-16 pt-16 font-bold">
-            <a href="{{ prev_page }}" class="{{ ! prev_page ?= 'opacity-0' }}">
+        <div class="flex justify-between text-xl -mx-16 pt-16 font-semibold ">
+            <a href="{{ prev_page }}" class="pagination-link {{ ! prev_page ?= 'opacity-0' }}">
                 &larr; Previous
             </a>
-            <a href="{{ next_page }}" class="{{ ! next_page ?= 'opacity-0' }}">
+            <a href="{{ next_page }}" class="pagination-link {{ ! next_page ?= 'opacity-0' }}">
                 Next &rarr;
             </a>
         </div>

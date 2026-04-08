@@ -1,6 +1,6 @@
-title: Articles
+title: Writing
 icon: paragraph-align-left
-template: home
+template: articles/show
 layout: layout
 taxonomies:
   - topics
