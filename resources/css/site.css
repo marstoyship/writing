@@ -52,6 +52,16 @@ a {
     transform: translateX(0.5ch);
 }
 
+a.cta-button {
+    color: white;
+    text-decoration: none;
+}
+
+a.cta-button:hover {
+    color: white;
+    opacity: 0.85;
+}
+
 .pagination-link:hover {
     color: #000000;
 }

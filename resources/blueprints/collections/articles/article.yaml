@@ -27,10 +27,7 @@ tabs:
           -
             handle: cta_url
             field:
-              collections:
-                - links
-              select_across_sites: true
-              type: link
+              type: text
               display: 'CTA URL'
               listable: true
           -

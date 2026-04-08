@@ -1,4 +1,4 @@
-<div class="max-w-3xl mx-auto relative mt-16">
+<div class="max-w-2xl mx-auto relative mt-16">
     <article class="content pt-32">
         <h1>{{ title }}</h1>
         <p class="mb-20 text-lg text-black">{{ subtitle }}</p>
@@ -6,7 +6,7 @@
     </article>
 </div>
 
-<div class="max-w-3xl mx-auto mb-32">
+<div class="max-w-2xl mx-auto mb-32">
     {{ collection:articles paginate="5" as="articles" }}
         {{ articles }}
             <div class="mb-16">
@@ -29,7 +29,7 @@
 
         {{ paginate }}
         {{ if prev_page || next_page }}
-        <div class="flex max-w-3xl justify-between text-xl -mx-16 pt-16 font-semibold ">
+        <div class="flex max-w-2xl justify-between text-xl -mx-16 pt-16 font-semibold ">
             <a href="{{ prev_page }}" class="pagination-link {{ ! prev_page ?= 'opacity-0' }}">
                 &larr; Previous
             </a>
