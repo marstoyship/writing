@@ -34,3 +34,12 @@ preferences:
       dark-content-bg: white
       dark-content-border: 'oklch(0.92 0.004 286.32)'
       dark-global-header-bg: 'oklch(0.274 0.006 286.033)'
+  assets:
+    assets:
+      columns:
+        - basename
+        - size
+        - width
+        - height
+        - alt
+        - last_modified
