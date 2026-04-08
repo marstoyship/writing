@@ -1,1 +1,15 @@
-{{ partial:topics.show sort="date:desc" }}
+<div class="max-w-3xl mx-auto relative mt-16 content">
+    <article class="lg:py-32 max-w-3xl mx-auto">
+        <h1>{{ title }}</h1>
+        <div class="text-sm mb-16 uppercase font-semibold">
+            {{ topics }}<a href="{{ url }}" class="text-teal font-semibold no-underline hover:text-black">{{ title }}</a>{{ unless last }}, {{ /unless }}{{ /topics }}
+            • {{ date format="M j, Y" }}
+        </div>
+        <div class="content prose max-w-none">
+            {{ content | widont }}
+        </div>
+        {{ if cta_url }}
+            <a href="{{ cta_url }}" class="cta-button">{{ cta_text ?? 'Learn more' }}</a>
+        {{ /if }}
+    </article>
+</div>
