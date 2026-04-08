@@ -1,0 +1,36 @@
+name: 'Marissa Epstein'
+super: true
+id: a3ecd07a-86cd-472a-8741-b50d7576088f
+password_hash: $2y$12$XA0.EKFni2IjUVCX1XGkTuRtkbRtccfWFETjipVHJBvBe.GAgz12i
+preferences:
+  collections:
+    pages:
+      view: list
+      columns:
+        - title
+        - slug
+        - status
+        - link_field
+    articles:
+      view: list
+      columns:
+        - title
+        - slug
+        - date
+        - topics
+        - status
+    links:
+      view: list
+  formatting_locale: en
+  theme:
+    id: custom
+    name: Custom
+    colors:
+      primary: '#E04E2B'
+      progress-bar: 'oklch(0.553 0.013 58.071)'
+      ui-accent-bg: '#E04E2B'
+      dark-body-bg: 'oklch(0.967 0.001 286.375)'
+      dark-body-border: transparent
+      dark-content-bg: white
+      dark-content-border: 'oklch(0.92 0.004 286.32)'
+      dark-global-header-bg: 'oklch(0.274 0.006 286.033)'

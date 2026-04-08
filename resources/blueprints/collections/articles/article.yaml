@@ -1,0 +1,82 @@
+title: Writing
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              display: Title
+              validate:
+                - required
+          -
+            handle: excerpt
+            field:
+              type: textarea
+              display: Excerpt
+              character_limit: 160
+          -
+            handle: content
+            field:
+              type: markdown
+              display: Content
+          -
+            handle: cta_url
+            field:
+              collections:
+                - links
+              select_across_sites: true
+              type: link
+              display: 'CTA URL'
+              listable: true
+          -
+            handle: cta_text
+            field:
+              character_limit: 50
+              type: text
+              display: 'CTA Text'
+          -
+            handle: hero_image
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: 'Hero Image'
+              listable: true
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: topics
+            field:
+              type: terms
+              taxonomies:
+                - topics
+              display: Topics
+              mode: select

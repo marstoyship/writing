@@ -1,0 +1,53 @@
+@import "tailwindcss/base";
+@import "style";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+    --primary-accent-color: #C21F0A;
+    --secondary-accent-color: #e04e2b;
+    --background-color-light: #e7e4d3;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: #1a1a1a;
+    font-family: 'Source Sans 3', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+    font-family: 'Albert Sans', Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: var(--primary-accent-color);
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1ch;
+    padding: 0.75em 1.4em;
+    background-color: black;
+    color: white;
+    font-family: 'Albert Sans', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.cta-button::after {
+    content: '→';
+    color: var(--secondary-accent-color);
+    transition: transform 150ms ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.43);
+}
+
+.cta-button:hover::after {
+    transform: translateX(0.5ch);
+}

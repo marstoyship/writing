@@ -1,0 +1,12 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: link_field
+            field:
+              type: link
+              display: 'Link Field'
+              sortable: false

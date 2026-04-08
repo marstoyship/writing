@@ -1,0 +1,16 @@
+tree:
+  -
+    id: 6d1182ff-4ddc-4759-9fb8-205231b6c518
+    title: 'My Work'
+    url: 'https://marissaepstein.com/my-work/'
+  -
+    id: 721948e7-d164-4f4b-b3b7-8be9ee1ac4f1
+    title: Me
+    url: 'https://marissaepstein.com/me/'
+  -
+    id: f5d3582f-1e57-4b1a-861b-d8e5e2ea1c71
+    entry: home
+  -
+    id: 30bbb96d-74bd-4b7c-b935-3de65bbcb520
+    title: 'My Resume'
+    url: 'https://marissaepstein.com/assets/Marissa-Epstein_Re%CC%81sume%CC%81-2025.pdf'
