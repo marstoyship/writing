@@ -5,6 +5,11 @@
             {{ topics }}<a href="{{ url }}" class="text-teal font-semibold no-underline hover:text-black">{{ title }}</a>{{ unless last }}, {{ /unless }}{{ /topics }}
             • {{ date format="M j, Y" }}
         </div>
+        <div>
+            {{ if hero_image }}
+                <img src="{{ hero_image }}" alt="{{ title }}" class="hero-image w-full mb-14">
+            {{ /if }}
+        </div>
         <div class="content prose max-w-none">
             {{ content | widont }}
         </div>
