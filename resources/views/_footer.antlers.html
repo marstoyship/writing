@@ -1,9 +1,10 @@
 <nav class="flex items-center justify-between flex-wrap py-12 lg:py-24 max-w-2xl mx-auto">
     <div>
-        <div class="text-sm mb-4">&copy; {{ now format="Y" }} {{ settings:site_name }}</div>
+        
         {{ nav:footer_navigation }}
-            <a href="{{ url }}" class="items-center w-full lg:w-auto lg:flex text-sm font-semibold text-black hover:text-teal mb-2">{{ title }}</a>
+            <a href="{{ url }}" class="items-center text-sm font-semibold text-black hover:text-teal mr-8">{{ title }}</a>
         {{ /nav:footer_navigation }}
+        <div class="text-sm mb-6 mt-6">&copy; {{ now format="Y" }} {{ settings:site_name }}</div>
     </div>
     <div class="flex items-center">
         {{ settings:social }}
