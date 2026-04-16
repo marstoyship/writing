@@ -16,12 +16,12 @@
                     </a>
                 </h2>
                 <p class="text-gray-600">
-                    <span class="text-gray-600 text-sm uppercase font-semibold">{{ date }}</span> 
+                    <span class="text-gray-600 text-sm uppercase font-semibold">{{ date }}</span>
                       •  <span class="text-teal-light text-sm uppercase font-semibold">{{ topics }}
                     <a href="{{ url }}" class="text-teal-light text-sm uppercase font-semibold hover:text-black">{{ title }}</a>
                     {{ /topics }}</span> &mdash;
                     {{ excerpt | widont ?? content | strip_tags | safe_truncate(150, '...') }}
-                    
+
                 </p>
             </div>
         {{ /articles }}
@@ -29,7 +29,7 @@
 
         {{ paginate }}
         {{ if prev_page || next_page }}
-        <div class="flex max-w-2xl justify-between text-xl -mx-16 pt-16 font-semibold ">
+        <div class="flex max-w-2xl justify-between text-xl pt-16 font-semibold">
             <a href="{{ prev_page }}" class="pagination-link {{ ! prev_page ?= 'opacity-0' }}">
                 &larr; Previous
             </a>
@@ -38,6 +38,6 @@
             </a>
         </div>
         {{ /if }}
-        {{ /paginate }}        
+        {{ /paginate }}
     {{ /collection:articles }}
 </div>
